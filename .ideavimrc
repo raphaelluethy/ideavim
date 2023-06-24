@@ -112,6 +112,8 @@ let g:WhichKeyDesc_errors_prev = "<leader>ep Go to previous error in solution"
 "" ========================================================
 
 inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap jj <Esc>
 
 " Tab navigation
 nnoremap <A-n> :tabnext<CR>
@@ -130,6 +132,10 @@ nnoremap ]] <Action>(MethodDown)
 " Easy visual indentation
 vnoremap < <gv
 vnoremap > >gv
+
+" Move lines up / down
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 " Execute macro saved in 'q' register
 nnoremap qj @q
