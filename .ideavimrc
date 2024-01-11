@@ -1,7 +1,7 @@
 "" .ideavimrc - Raphael Lüthy
 
 
-"" Base Settings
+"" Base Setting
 "" ========================================================
 
 "set hlsearch
@@ -43,7 +43,6 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']"
 
 "" Key mappings
 "" ========================================================
-inoremap jj <Esc>
 
 " Jump between methods -> need to seach for a better solution
 " nnoremap [[ <Action>(MethodUp)
@@ -76,7 +75,6 @@ map <leader>zo :action ExpandAllRegions<CR>
 
 " File navigation
 map <leader>sf <action>(GotoFile)
-map <leader>f <action>(RecentFiles)
 map <leader><leader> <Action>(RecentFiles)
 
 " Close active tab
@@ -110,4 +108,12 @@ map <leader>l <C-w>l
 " navigate buffers
 map <S-l> <Action>(NextTab)
 map <S-h> <Action>(PreviousTab)
+
+" tooltip
+map <leader>tt <Action>(ShowQuickDoc)
+
+nmap gh <Action>(ShowHoverInfo)
+
+nmap <C-h> <Action>(ShowHoverInfo)
+nmap <K> <Action>(ShowHoverInfo)
 
