@@ -116,4 +116,4 @@ nmap gh <Action>(ShowHoverInfo)
 
 nmap <C-h> <Action>(ShowHoverInfo)
 nmap <K> <Action>(ShowHoverInfo)
-
+nmap <leader>f <Action>(ReformatCode)
